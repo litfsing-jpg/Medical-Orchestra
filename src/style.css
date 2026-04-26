@@ -883,6 +883,8 @@ footer {
 .fade-up-delay-3 { transition-delay: .45s; }
 
 /* ─── MOBILE ─── */
+
+/* Tablets & small laptops */
 @media (max-width: 960px) {
   .comparison-grid { grid-template-columns: 1fr; }
   .compare-after { border-top: 1px solid rgba(255,255,255,.06); }
@@ -897,12 +899,135 @@ footer {
   .process-arrow { display: none; }
 }
 
+/* Mobile devices */
 @media (max-width: 640px) {
+  /* Global container padding reduction */
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; height: 64px; }
+  .footer-inner { padding: 0 20px; }
+  .footer-bottom { padding: 32px 20px 0; }
+
+  /* Section padding */
   .section-pad { padding: 80px 0; }
+  .section-pad-lg { padding: 100px 0; }
+
+  /* Hero adjustments */
   .hero-inner { padding: 40px 0 60px; }
   .hero-actions { flex-direction: column; align-items: stretch; }
-  .btn-primary { justify-content: center; }
+  .btn-primary { justify-content: center; padding: 16px 28px; font-size: 16px; }
   .hero-trust { display: none; }
-  .nav-inner { height: 64px; }
   .nav-cta { display: none; }
+  .hero-subtitle { font-size: 17px; margin-bottom: 40px; }
+  .hero-eyebrow { font-size: 12px; padding: 6px 16px; margin-bottom: 32px; }
+
+  /* Video wrapper */
+  .hero-video-wrap { margin-top: 48px; border-radius: 14px; }
+  .video-play-btn { width: 60px; height: 60px; }
+  .video-play-btn svg { width: 22px; height: 22px; }
+  .video-caption { font-size: 12px; padding: 0 16px; text-align: center; }
+
+  /* Comparison grid - reduce padding */
+  .compare-col { padding: 32px 24px; }
+  .compare-label { margin-bottom: 24px; }
+  .compare-item { gap: 12px; margin-bottom: 24px; }
+  .compare-text { font-size: 15px; }
+
+  /* Problem section */
+  .problem-headline { margin-bottom: 16px; }
+  .problem-sub { font-size: 17px; margin-bottom: 48px; }
+
+  /* Passport section */
+  .section-title { font-size: clamp(26px, 6vw, 40px); margin-bottom: 16px; }
+  .section-body { font-size: 16px; margin-bottom: 32px; }
+
+  /* Document mockup */
+  .doc-header { padding: 16px 20px; }
+  .doc-body { padding: 20px; gap: 20px; }
+  .doc-footer { padding: 12px 20px; }
+  .doc-title { font-size: 14px; }
+  .doc-subtitle { font-size: 11px; }
+  .doc-row { flex-direction: column; gap: 4px; }
+  .doc-val { text-align: left; }
+  .doc-key { font-size: 12px; }
+  .doc-val { font-size: 13px; }
+  .doc-tag { font-size: 11px; padding: 3px 10px; }
+
+  /* Agents section */
+  .agents-header { margin-bottom: 56px; }
+  .agents-header .section-title { font-size: clamp(26px, 6vw, 36px); }
+  .agent-card { padding: 32px 24px; gap: 16px; border-radius: 16px; }
+  .agent-name { font-size: 19px; }
+  .agent-desc { font-size: 14px; }
+  .agent-icon { width: 48px; height: 48px; border-radius: 12px; margin-bottom: 4px; }
+
+  /* Process strip */
+  .process-strip { padding: 24px 20px; margin-top: 56px; gap: 16px; }
+  .process-step { gap: 12px; }
+  .process-num { width: 32px; height: 32px; font-size: 13px; }
+  .process-label { font-size: 13px; }
+
+  /* Sovereignty section */
+  .sov-layout { gap: 48px; }
+  .sov-card { padding: 24px 20px; gap: 16px; border-radius: 12px; }
+  .sov-icon-wrap { width: 44px; height: 44px; }
+  .sov-card-title { font-size: 16px; }
+  .sov-card-text { font-size: 14px; }
+
+  /* Pricing section */
+  .price-card { padding: 40px 24px; border-radius: 20px; margin: 40px 0 32px; }
+  .price-amount { font-size: 52px; }
+  .price-amount span { font-size: 24px; }
+  .price-note { font-size: 14px; margin-bottom: 40px; }
+  .price-feature { gap: 12px; }
+  .price-feature-text { font-size: 15px; }
+  .price-filter { font-size: 14px; margin-top: 32px; padding-top: 32px; }
+  .cta-btn-large { padding: 20px 32px; font-size: 16px; border-radius: 10px; }
+
+  /* Footer */
+  footer { padding: 56px 0 40px; }
+  .footer-inner { gap: 40px; }
+  .footer-tagline { font-size: 14px; }
+  .footer-link { font-size: 15px; }
+  .footer-bottom { font-size: 12px; margin-top: 40px; }
+}
+
+/* Extra small devices (320px-375px phones) */
+@media (max-width: 400px) {
+  .container { padding: 0 16px; }
+  .nav-inner { padding: 0 16px; }
+  .footer-inner { padding: 0 16px; }
+  .footer-bottom { padding: 24px 16px 0; }
+
+  .hero-title { font-size: clamp(32px, 8vw, 42px); }
+  .hero-subtitle { font-size: 16px; }
+  .hero-eyebrow { font-size: 11px; padding: 5px 14px; }
+
+  .compare-col { padding: 28px 20px; }
+  .compare-text { font-size: 14px; }
+
+  .section-title { font-size: clamp(24px, 6vw, 32px); }
+  .section-body { font-size: 15px; }
+  
+  .problem-headline { font-size: clamp(26px, 7vw, 36px); }
+  .problem-sub { font-size: 16px; }
+
+  .doc-header { padding: 14px 16px; }
+  .doc-body { padding: 16px; }
+  .doc-footer { padding: 10px 16px; }
+
+  .agent-card { padding: 28px 20px; }
+  .agent-name { font-size: 18px; }
+  .agent-desc { font-size: 13px; }
+
+  .process-strip { padding: 20px 16px; }
+
+  .sov-card { padding: 20px 16px; }
+
+  .price-card { padding: 32px 20px; }
+  .price-amount { font-size: 44px; }
+  .price-amount span { font-size: 20px; }
+  .price-feature-text { font-size: 14px; }
+  .cta-btn-large { padding: 18px 24px; font-size: 15px; }
+
+  .btn-primary { padding: 14px 24px; font-size: 15px; }
 }
